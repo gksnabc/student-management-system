@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Management</title>
+</head>
+<body>
+
+<h1>Student Management System</h1>
+
+<a href="/add">Add Student</a>
+
+<ul>
+{% for student in students %}
+    <li>{{ student.name }} - {{ student.age }} - {{ student.course }}</li>
+{% endfor %}
+</ul>
+
+</body>
+</html>
